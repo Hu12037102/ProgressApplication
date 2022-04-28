@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListenMusicView">
+        <attr name="lmv_progress_color" format="color" />
+        <attr name="lmv_all_color" format="color" />
+        <attr name="lmv_border_width" format="dimension" />
+        <attr name="lmv_default_size" format="dimension" />
+        <attr name="lmv_current_progress" format="integer" />
+        <attr name="lmv_max_progress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MusicSwingView">
+        <attr name="msv_swing_count" format="integer" />
+        <attr name="msv_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="MusicSwingCompat">
+        <attr name="msc_swing_count" format="integer" />
+        <attr name="msc_color" format="color" />
+        <attr name="msc_gap_width" format="dimension"/>
+    </declare-styleable>
+</resources>

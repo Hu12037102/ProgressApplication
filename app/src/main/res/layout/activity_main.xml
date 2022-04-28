@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f00"
+    tools:context=".MainActivity">
+
+    <com.huxiaobai.progressapplication.ListenMusicView
+        android:id="@+id/lmv_loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lmv_all_color="#FF777777"
+        app:lmv_border_width="2dp"
+        app:lmv_progress_color="@color/white" />
+
+    <com.huxiaobai.progressapplication.MusicSwingView
+        android:id="@+id/msv_music"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lmv_loading"
+        app:msv_swing_count="3" />
+
+    <com.huxiaobai.progressapplication.MusicSwingCompat
+        android:id="@+id/msc_swing"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/lmv_loading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:msc_color="@color/white"
+        app:msc_gap_width="4dp"
+        app:msc_swing_count="5"
+        android:background="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
